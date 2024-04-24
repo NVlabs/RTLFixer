@@ -1,0 +1,12 @@
+python main.py \
+  --run_name "test_oneshot_compile" \
+  --root_dir "exp" \
+  --dataset_path ./benchmarks/verilogeval-syntax-hard.jsonl \
+  --task "oneshot_fix_compile" \
+  --agent_feedback "rag" \
+  --language "verilog" \
+  --model "gpt-3.5-turbo-16k-0613" \
+  --pass_at_k "1" \
+  --num_samples '1' \
+  --compiler 'quartus' \
+  --verbose
